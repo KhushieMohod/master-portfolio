@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Khushie Niteen Mohod — Second-year Computer Engineering student at PCCOE Pune. Passionate about Data Structures, Algorithms, and software development. Competitive programmer and ACM Student Chapter leader." />
+  <meta name="keywords" content="Khushie Mohod, Computer Engineering, PCCOE, ACM, portfolio, competitive programming, software developer" />
+  <meta name="author" content="Khushie Niteen Mohod" />
+  <meta property="og:title" content="Khushie Niteen Mohod — Portfolio" />
+  <meta property="og:description" content="Computer Engineering Student | Competitive Programmer | ACM Leader" />
+  <meta property="og:type" content="website" />
+  <title>Khushie Niteen Mohod | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css?v=3.0" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#about" class="nav-logo" id="site-logo">KN<span>M</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about"          id="nav-about">About</a></li>
+        <li><a href="#education"      id="nav-education">Education</a></li>
+        <li><a href="#projects"       id="nav-projects">Projects</a></li>
+        <li><a href="#achievements"   id="nav-achievements">Achievements</a></li>
+        <li><a href="#certifications" id="nav-certifications">Certifications</a></li>
+        <li><a href="#contact"        id="nav-contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#about"          id="mnav-about">About</a>
+      <a href="#education"      id="mnav-education">Education</a>
+      <a href="#projects"       id="mnav-projects">Projects</a>
+      <a href="#achievements"   id="mnav-achievements">Achievements</a>
+      <a href="#certifications" id="mnav-certifications">Certifications</a>
+      <a href="#contact"        id="mnav-contact">Contact</a>
+    </nav>
+  </nav>
+
+  <!-- ============================================================
+       HERO / ABOUT SECTION
+  ============================================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Photo -->
+        <div class="hero-photo-col">
+          <div class="hero-photo-wrapper" id="hero-photo-wrapper">
+            <div class="hero-photo-ring" aria-hidden="true"></div>
+            <div class="hero-photo-ring-inner" aria-hidden="true"></div>
+            <img
+              src="assets/profile.jpg"
+              alt="Khushie Niteen Mohod — profile photo"
+              class="hero-photo-img"
+              id="profile-photo"
+              loading="eager"
+            />
+            <span class="hero-dot" aria-hidden="true"></span>
+            <span class="hero-dot" aria-hidden="true"></span>
+            <span class="hero-dot" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="hero-text-col">
+          <p class="hero-greeting" id="hero-greeting">Hello, World!</p>
+
+          <h1 class="hero-name" id="about-heading">
+            Khushie<br /><span>Niteen Mohod</span>
+          </h1>
+
+          <p class="hero-title" id="hero-title">
+            Computer Engineering Student
+            <span class="hero-title-dot" aria-hidden="true"></span>
+            PCCOE, Pune
+            <span class="hero-title-dot" aria-hidden="true"></span>
+            2024–2028
+          </p>
+
+          <p class="hero-bio" id="hero-bio">
+            I am a Second-year Computer Engineering student passionate about
+            <strong>Data Structures</strong>, <strong>Algorithms</strong>, and
+            software development. I actively participate in competitive programming
+            and hold leadership roles in the <strong>ACM Student Chapter</strong>.
+          </p>
+
+          <div class="hero-tags" id="hero-tags" role="list">
+            <span class="hero-tag" role="listitem">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              Competitive Programming
+            </span>
+            <span class="hero-tag" role="listitem">
+              <i class="fas fa-diagram-project" aria-hidden="true"></i>
+              Data Structures &amp; Algorithms
+            </span>
+            <span class="hero-tag" role="listitem">
+              <i class="fas fa-users" aria-hidden="true"></i>
+              ACM Student Chapter
+            </span>
+            <span class="hero-tag" role="listitem">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              Dept. Rank 2 &middot; CGPA 9.62
+            </span>
+          </div>
+
+          <div class="hero-cta-row" id="hero-cta">
+            <a href="#contact" class="btn btn-primary" id="hire-me-btn" aria-label="Contact Khushie">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              Hire Me / Contact
+            </a>
+            <a href="#projects" class="btn btn-outline" id="view-projects-btn" aria-label="View projects">
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              View Projects
+            </a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats" role="list">
+            <div class="stat-item" role="listitem">
+              <div class="stat-number" id="stat-cgpa" data-target="9.62" data-decimal="true">0.00</div>
+              <div class="stat-label">Current CGPA</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-number" id="stat-rank" data-target="2">#2</div>
+              <div class="stat-label">Dept. Rank</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-number" id="stat-projects" data-target="6">0</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section id="education" class="section" aria-labelledby="education-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="badge">Academic Journey</span>
+        <h2 id="education-heading">Education</h2>
+        <p>A strong academic foundation built on consistent excellence and a passion for engineering.</p>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- B.Tech -->
+        <article class="timeline-item" role="listitem" aria-labelledby="edu-btech-title">
+          <div class="edu-card" id="edu-card-btech">
+            <span class="edu-year">2024 – 2028</span>
+            <h3 class="edu-degree" id="edu-btech-title">B.Tech. in Computer Engineering</h3>
+            <p class="edu-institution">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              Pimpri Chinchwad College of Engineering (PCCOE), Pune
+            </p>
+            <div class="edu-score-row">
+              <div class="edu-score">
+                <div class="edu-score-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+                <div>
+                  <div style="font-size:1.1rem;font-weight:700;">9.62</div>
+                  <div style="font-size:0.78rem;color:var(--secondary-dark);font-weight:500;">Current CGPA</div>
+                </div>
+              </div>
+              <span class="edu-rank" id="edu-btech-rank">Dept. Rank #2</span>
+            </div>
+            <div class="edu-progress-wrap">
+              <div class="edu-progress-label"><span>CGPA Progress</span><span>9.62 / 10</span></div>
+              <div class="edu-progress-bar" role="progressbar" aria-valuenow="96.2" aria-valuemin="0" aria-valuemax="100">
+                <div class="edu-progress-fill" data-percent="96.2" id="progress-btech"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- HSC -->
+        <article class="timeline-item" role="listitem" aria-labelledby="edu-hsc-title">
+          <div class="edu-card" id="edu-card-hsc">
+            <span class="edu-year">Completed 2024</span>
+            <h3 class="edu-degree" id="edu-hsc-title">Higher Secondary Certificate (HSC)</h3>
+            <p class="edu-institution">
+              <i class="fas fa-book-open" aria-hidden="true"></i>
+              Maharashtra State Board
+            </p>
+            <div class="edu-score-row">
+              <div class="edu-score">
+                <div class="edu-score-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+                <div>
+                  <div style="font-size:1.1rem;font-weight:700;">83.50%</div>
+                  <div style="font-size:0.78rem;color:var(--secondary-dark);font-weight:500;">Aggregate Score</div>
+                </div>
+              </div>
+            </div>
+            <div class="edu-progress-wrap">
+              <div class="edu-progress-label"><span>Score</span><span>83.50%</span></div>
+              <div class="edu-progress-bar" role="progressbar" aria-valuenow="83.5" aria-valuemin="0" aria-valuemax="100">
+                <div class="edu-progress-fill" data-percent="83.5" id="progress-hsc"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SSC -->
+        <article class="timeline-item" role="listitem" aria-labelledby="edu-ssc-title">
+          <div class="edu-card" id="edu-card-ssc">
+            <span class="edu-year">Completed 2022</span>
+            <h3 class="edu-degree" id="edu-ssc-title">Secondary School Certificate (SSC)</h3>
+            <p class="edu-institution">
+              <i class="fas fa-book" aria-hidden="true"></i>
+              Maharashtra State Board
+            </p>
+            <div class="edu-score-row">
+              <div class="edu-score">
+                <div class="edu-score-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                <div>
+                  <div style="font-size:1.1rem;font-weight:700;">99.20%</div>
+                  <div style="font-size:0.78rem;color:var(--secondary-dark);font-weight:500;">Aggregate Score</div>
+                </div>
+              </div>
+              <span class="edu-rank" id="edu-ssc-rank">Outstanding</span>
+            </div>
+            <div class="edu-progress-wrap">
+              <div class="edu-progress-label"><span>Score</span><span>99.20%</span></div>
+              <div class="edu-progress-bar" role="progressbar" aria-valuenow="99.2" aria-valuemin="0" aria-valuemax="100">
+                <div class="edu-progress-fill" data-percent="99.2" id="progress-ssc"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">What I Build</span>
+        <h2 id="projects-heading">Projects</h2>
+        <p>Click any project card to explore the full details and demonstration.</p>
+      </div>
+      <!-- Grid populated by script.js -->
+      <div class="projects-grid" id="projectsGrid" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACHIEVEMENTS SECTION
+  ============================================================ -->
+  <section id="achievements" class="section" aria-labelledby="achievements-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="badge">Milestones</span>
+        <h2 id="achievements-heading">Achievements</h2>
+        <p>Recognition and milestones earned through dedication and hard work.</p>
+      </div>
+
+      <div class="placeholder-grid">
+        <div class="placeholder-card" id="achievement-card-1">
+          <div class="placeholder-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <h3>Dept. Rank 2</h3>
+          <p>Achieved Department Rank #2 in B.Tech Computer Engineering at PCCOE with a CGPA of 9.62.</p>
+        </div>
+        <div class="placeholder-card" id="achievement-card-2">
+          <div class="placeholder-icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+          <h3>ACM Student Chapter</h3>
+          <p>Holds the role of Management Head in the ACM Student Chapter, driving tech initiatives and community growth.</p>
+        </div>
+        <div class="placeholder-card" id="achievement-card-3">
+          <div class="placeholder-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+          <h3>SSC Topper — 99.20%</h3>
+          <p>Scored an outstanding 99.20% in the Maharashtra State Board SSC examinations.</p>
+        </div>
+        <div class="placeholder-card" id="achievement-card-4">
+          <div class="placeholder-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+          <h3>Competitive Programmer</h3>
+          <p>Active participant in competitive programming contests, sharpening problem-solving skills.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+  ============================================================ -->
+  <section id="certifications" class="section" aria-labelledby="certifications-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="badge">Recognition &amp; Learning</span>
+        <h2 id="certifications-heading">Certifications &amp; Highlights</h2>
+        <p>Academic achievements and professional certifications that demonstrate continuous learning.</p>
+      </div>
+
+      <!-- Highlight Badges -->
+      <div class="highlight-badges reveal">
+        <div class="highlight-badge" id="highlight-rank">
+          <div class="highlight-badge-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <div class="highlight-badge-text">
+            <strong>2nd Topper in Department</strong>
+            <span>CGPA: 9.62</span>
+          </div>
+        </div>
+        <div class="highlight-badge" id="highlight-acm">
+          <div class="highlight-badge-icon"><i class="fas fa-users-gear" aria-hidden="true"></i></div>
+          <div class="highlight-badge-text">
+            <strong>Management Head</strong>
+            <span>ACM Student Chapter</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications List -->
+      <div class="cert-list reveal">
+
+        <div class="cert-item" id="cert-google">
+          <div class="cert-bullet"><i class="fab fa-google" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h4 class="cert-title">Google Cloud Career Launchpad</h4>
+            <p class="cert-sub">Cybersecurity Track</p>
+          </div>
+          <a href="assets/Google Cloud.pdf" target="_blank" rel="noopener noreferrer"
+             class="cert-link" id="cert-link-google" aria-label="View Google Cloud Certificate">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            View Certificate
+          </a>
+        </div>
+
+        <div class="cert-item" id="cert-udemy">
+          <div class="cert-bullet"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h4 class="cert-title">Mastering Data Structures and Algorithms</h4>
+            <p class="cert-sub">Udemy</p>
+          </div>
+          <a href="assets/Udemy.pdf" target="_blank" rel="noopener noreferrer"
+             class="cert-link" id="cert-link-udemy" aria-label="View Udemy Certificate">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            View Certificate
+          </a>
+        </div>
+
+        <div class="cert-item" id="cert-xim">
+          <div class="cert-bullet"><i class="fas fa-robot" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h4 class="cert-title">ACM Winter School on Responsible AI</h4>
+            <p class="cert-sub">XIM University</p>
+          </div>
+          <a href="assets/XIM University.jpeg" target="_blank" rel="noopener noreferrer"
+             class="cert-link" id="cert-link-xim" aria-label="View XIM University Certificate">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            View Certificate
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <h2 id="contact-heading">Contact Details</h2>
+        <p class="contact-subtitle">I'd love to hear from you!</p>
+      </div>
+
+      <div class="contact-wrapper reveal">
+
+        <div class="contact-info" id="contact-info">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations about competitive programming, DSA, and software development.</p>
+
+          <div class="contact-item" id="contact-email-detail">
+            <div class="contact-item-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>Email Address</strong>
+              <span><a href="mailto:khushiemohod@gmail.com">khushiemohod@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-phone-detail">
+            <div class="contact-item-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>Phone Number</strong>
+              <span><a href="tel:+919561976724">+91-9561976724</a></span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-location-detail">
+            <div class="contact-item-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>Location</strong>
+              <span>Pune, Maharashtra</span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-college-detail">
+            <div class="contact-item-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>Institution</strong>
+              <span>Pimpri Chinchwad College of Engineering, Pune</span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-linkedin-detail">
+            <div class="contact-item-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>LinkedIn</strong>
+              <span><a href="https://www.linkedin.com/in/khushie-mohod-94453531a/" target="_blank" rel="noopener noreferrer">Khushie Mohod</a></span>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-github-detail">
+            <div class="contact-item-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+            <div class="contact-item-text">
+              <strong>GitHub</strong>
+              <span><a href="https://github.com/KhushieMohod" target="_blank" rel="noopener noreferrer">Khushie Mohod</a></span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="https://formtorch.com/f/YOUR_FORM_ID" method="POST" aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your Name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width:100%;justify-content:center;">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            Send Message
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="site-footer" role="contentinfo">
+    <p>
+      &copy; 2026 <strong>Khushie Niteen Mohod</strong>
+      <span class="footer-divider" aria-hidden="true">|</span>
+      B.Tech Computer Engineering &middot; PCCOE, Pune
+      <span class="footer-divider" aria-hidden="true">|</span>
+      Built with <i class="fas fa-heart" style="color:var(--accent);" aria-label="love"></i> &amp; Passion
+    </p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" aria-label="Scroll back to top" title="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============================================================
+       PROJECT MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-container" id="modalContainer">
+
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fas fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon" id="modalIcon" aria-hidden="true"></div>
+        <div>
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-details">
+          <h3 class="modal-section-label">
+            <i class="fas fa-list-check" aria-hidden="true"></i> Project Details
+          </h3>
+          <ul class="modal-bullets" id="modalBullets" aria-label="Project details"></ul>
+        </div>
+
+        <div class="modal-demo">
+          <h3 class="modal-section-label">
+            <i class="fas fa-circle-play" aria-hidden="true"></i> Project Demonstration
+          </h3>
+          <div class="modal-demo-placeholder">
+            <div class="modal-demo-inner">
+              <i class="fas fa-film" aria-hidden="true"></i>
+              <p>Video / GIF Mockup</p>
+              <span>Project demonstration coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
